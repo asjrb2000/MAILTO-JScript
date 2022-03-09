@@ -5,44 +5,41 @@
 <html>
 
 <head>
-<link rel='stylesheet' type='text/css' href='/clubs/119379/css/fonts.css?v=6' />
-<link rel='stylesheet' type='text/css' href='/css/layout/5/layout.css?v=8' />
-<link rel='stylesheet' type='text/css' href='/css/menu/16/menu.css?v=120521' />
-<link rel='stylesheet' type='text/css' href='/css/design/2/design.css?v=1' />
-<link rel='stylesheet' type='text/css' href='/css/events.css?v=20211018' />
-<link rel='stylesheet' type='text/css' href='/css/color/13/color.css?v=120522' />
-<link rel='stylesheet' type='text/css' href='/css/color/13/layout/5/layout_color.css?v=8_120522' />
-<link rel='stylesheet' type='text/css' href='/css/color/13/menu/16/menu_color.css?v=120521_120522' />
-<link rel='stylesheet' type='text/css' href='/clubs/119379/css/club.css?v=75' />
-<link rel='stylesheet' type='text/css' href='/clubs/119379/css/custom.css?v=75' />
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/css/widget.css?v=20210416'>
+<link rel='stylesheet' type='text/css' href='https://creamcitycycleclub.com/clubs/119379/css/club.css?v=75' />
+<link rel='stylesheet' type='text/css' href='https://creamcitycycleclub.com/clubs/119379/css/custom.css?v=75' />
+<link rel="stylesheet" type="text/css" href="https://creamcitycycleclub.com/css/common_ui.css?v=20220218" />
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/css/layout/5/layout.css?v=8' />
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/css/menu/16/menu.css?v=120521' />
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/css/design/2/design.css?v=1' />
+
+<!---
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/css/color/13/color.css?v=120522' />
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/css/color/13/layout/5/layout_color.css?v=8_120522' />
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/css/color/13/menu/16/menu_color.css?v=120521_120522' />
+--!>
+
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/clubs/119379/css/club.css?v=75' />
+<link rel='stylesheet' type='text/css' href='https://www.creamcitycycleclub.com/clubs/119379/css/custom.css?v=75' />
+
 </head
 
 <body>
+
+
 <h2> Tan Hill </h2>
 <div class="original-dates">Wednesday, April 27, 2022, 9:30 AM</div>
 <div id="full_name">John Brittain</div>
-
 <script>
-
-const elements = document.getElementsByClassName("original-dates"); 
-const rdate = Array.from(elements); 
-const element2 = document.getElementsByTagName("h2"); 
-const course = Array.from(element2); 
-const element3 = document.getElementById("full_name"); 
-const fullname = element3.innerText; 
-document.write('<p>' + fullname + '</p>'); 
-console.log(fullname);
-course.forEach(console.log); 
-rdate.forEach(console.log); 
-document.write('<p>Hello John:' + course[0].innerHTML + '</p>'); 
-const subj = 'subject="' + rdate[0].innerHTML + '&amp;body=VolunteerWed" class="ce-button"'; document.write('<p>' + subj + '</p>'); 
-const body = 'body=I volunteer to lead the ride on ' + course[0].innerHTML + ' --- ' + fullname; 
-document.write('<p>' + body + '</p>'); 
-const xmail = '<a href="mailto:asjrb2000 @yahoo.com?cc=asjrb2000@gmail.com&subject=Wed Ride Volunteer for' + rdate[0].innerHTML + ' &' + body + '" class="ce - button ">Volunteer</a> '; 
-console.log(xmail); 
-document.write(xmail);
-
+document.write('<p>This is from embedded script </p>');
 </script>
 
+
+
+Testing the MAILTO script --->
+<script src='mailto.js'></script>
+<!---
+//<script src=https://github.com/asjrb2000/MAILTO-JScript/blob/main/mailto.js></script>
+--->
 </body>
 </html>
