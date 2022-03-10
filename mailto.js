@@ -9,12 +9,12 @@ document.write('<p>' + fullname + '</p>');
 course.forEach(console.log); 
 rdate.forEach(console.log);
  
-document.write('<p>Hello John:' + course[0].innerHTML + '</p>'); 
+document.write('<p>Hello John:' + course[0].innertext + '</p>'); 
 
 const subj = 'subject="' + rdate[0].innerHTML + '&amp;"'; 
 document.write('<p>' + subj + '</p>'); 
 
-const body = 'body=I volunteer to lead the ride on ' + course[0].innerHTML + ' --- ' + fullname; 
+const body = 'body=I volunteer to lead the ride on ' + course[0].innertext + ' --- ' + fullname; 
 document.write('<p>' + body + '</p>'); 
 
 const xmail = '<a href="mailto:asjrb2000@yahoo.com?' +
