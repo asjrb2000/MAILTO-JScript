@@ -1,27 +1,32 @@
-console.log('This is my first log message.')
 const elements = document.getElementsByClassName("original-dates"); 
-const rdate = Array.from(elements); 
+const rdate = Array.from(elements);
+const element4 = document.getElementsByClassName("panel-user-email"); 
+const remail = Array.from(element4);  
+const element5 = document.getElementsByClassName("panel-user-phone"); 
+const rphone = Array.from(element5); 
 const element2 = document.getElementsByTagName("h2"); 
 const course = Array.from(element2); 
 const element3 = document.getElementById("full_name"); 
 const fullname = element3.innerText; 
-document.write('<p>' + fullname + '</p>'); 
-course.forEach(console.log); 
-rdate.forEach(console.log);
  
-document.write('<p>Hello John:' + course[0].innertext + '</p>'); 
 
-const subj = 'subject="' + rdate[0].innerHTML + '&amp;"'; 
-document.write('<p>' + subj + '</p>'); 
+const subj = 'subject=Ride Leader Volunteer ' + rdate[0].innerHTML + '&amp'; 
+console.log(subj);
 
-const body = 'body=I volunteer to lead the ride on ' + course[0].innertext + ' --- ' + fullname; 
-document.write('<p>' + body + '</p>'); 
-
+const body = 'body=***Thank you for volunteering!***%0D%0A%0D%0A' +
+                   'I volunteer to lead the ride ' + 
+                   course[0].innerHTML + 
+                   ' on ' + rdate[0].innerHTML + '%0D%0A' +
+                   fullname + '%0D%0A' +
+                   remail[0].innerHTML + '%0D%0A' +
+                   rphone[0].innerHTML;
+console.log(body);
+ 
 const xmail = '<a href="mailto:asjrb2000@yahoo.com?' +
         'cc=asjrb2000@gmail.com&' +
-        'subject=Wed Ride Volunteer for' + rdate[0].innerHTML + ' &' + 
+        subj + ' &' + 
         body + 
-        ' " class="ce-button ">Volunteer</a> '; 
-console.log(xmail); 
+        ' " class="ce-button ">Volunteer</a> ';
+console.log(xmail);
+ 
 document.write(xmail);
-
