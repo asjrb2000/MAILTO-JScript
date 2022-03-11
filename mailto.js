@@ -10,13 +10,13 @@ const element3 = document.getElementById("full_name");
 const fullname = element3.innerText; 
  
 
-const subj = 'subject=Ride Leader Volunteer ' + rdate[0].innertext + '&amp'; 
+const subj = 'subject=Ride Leader Volunteer ' + rdate[0].innerText + '&amp'; 
 console.log(subj);
 
 const body = 'body=***Thank you for volunteering!***%0D%0A%0D%0A' +
                    'I volunteer to lead the ride ' + 
                    course[0].innerHTML + 
-                   ' on ' + rdate[0].innertext + '%0D%0A' +
+                   ' on ' + rdate[0].innerText + '%0D%0A' +
                    fullname + '%0D%0A' +
                    remail[0].innerHTML + '%0D%0A' +
                    rphone[0].innerHTML;
