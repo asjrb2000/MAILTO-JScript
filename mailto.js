@@ -27,7 +27,7 @@ const xmail = '<a href="mailto:WeekendRideCoord@creamcitycycleclub.com?' +
         subj + ' &' + 
         body + 
         ' " id="ctl00_ctl00_contacts_repeater_email_link_3" class="contact-email" style="background-color: rgb(241, 241, 241);"'>
-WeekendRideCoord@creamcitycycleclub.com</a> ';
+        'WeekendRideCoord@creamcitycycleclub.com</a> ';
 console.log(xmail);
  
 document.write(xmail);
