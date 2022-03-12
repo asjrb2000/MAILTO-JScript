@@ -22,11 +22,12 @@ const body = 'body=***Thank you for volunteering!***%0D%0A%0D%0A' +
                    rphone[0].innerHTML;
 console.log(body);
  
-const xmail = '<a href="mailto:asjrb2000@yahoo.com?' +
+const xmail = '<a href="mailto:WeekendRideCoord@creamcitycycleclub.com?' +
         'cc=asjrb2000@gmail.com&' +
         subj + ' &' + 
         body + 
-        ' " class="ce-button ">Volunteer</a> ';
+        ' " id="ctl00_ctl00_contacts_repeater_email_link_3" class="contact-email" style="background-color: rgb(241, 241, 241);">
+WeekendRideCoord@creamcitycycleclub.com</a> ';
 console.log(xmail);
  
 document.write(xmail);
