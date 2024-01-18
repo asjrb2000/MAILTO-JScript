@@ -8,7 +8,7 @@ let rphone = Array.from(element5);
 let element2 = document.getElementsByTagName("h2"); 
 let course = Array.from(element2); 
 let element3 = document.getElementById("full_name"); 
-let fullname = element3.innerText; 
+let fullname = element3.value; 
  
 
 let subj = 'subject=Ride Leader Volunteer ' + rdate[0].innerText + '&amp'; 
