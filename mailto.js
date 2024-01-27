@@ -1,3 +1,4 @@
+<script>
 {
 let elements = document.getElementsByClassName("original-dates"); 
 this.rdate = Array.from(elements);
@@ -33,3 +34,4 @@ console.log(xmail);
  
 document.write(xmail);
 }
+</script>
