@@ -1,14 +1,14 @@
 {
 let elements = document.getElementsByClassName("original-dates"); 
-let rdate = Array.from(elements);
+this.rdate = Array.from(elements);
 let element4 = document.getElementsByClassName("panel-user-email"); 
-let remail = Array.from(element4);  
+this.remail = Array.from(element4);  
 let element5 = document.getElementsByClassName("panel-user-phone"); 
-let rphone = Array.from(element5); 
+this.rphone = Array.from(element5); 
 let element2 = document.getElementsByTagName("h2"); 
-let course = Array.from(element2); 
+this.course = Array.from(element2); 
 let element3 = document.getElementById("full_name"); 
-let fullname = document.getElementById("full_name").innerText; 
+this.fullname = document.getElementById("full_name").innerText; 
  
 
 let subj = 'subject=Ride Leader Volunteer ' + rdate[0].innerText + '&amp'; 
